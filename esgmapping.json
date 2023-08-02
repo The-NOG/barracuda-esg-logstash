@@ -1,0 +1,113 @@
+{
+	"settings": {
+		"index.refresh_interval": "5s",
+		"index.codec": "best_compression"
+	},
+	"mappings": {
+		"properties": {
+			"@timestamp": {
+				"type": "date"
+			},
+			"@version": {
+				"type": "keyword"
+			},
+			"action": {
+				"type": "keyword"
+			},
+			"encryption_flag": {
+				"type": "keyword"
+			},
+			"geoip": {
+				"properties": {
+					"city_name": {
+						"type": "keyword"
+					},
+					"continent_code": {
+						"type": "keyword"
+					},
+					"country_code2": {
+						"type": "keyword"
+					},
+					"country_code3": {
+						"type": "keyword"
+					},
+					"country_name": {
+						"type": "keyword"
+					},
+					"ip": {
+						"type": "ip"
+					},
+					"latitude": {
+						"type": "float"
+					},
+					"location": {
+						"type": "geo_point"
+					},
+					"longitude": {
+						"type": "float"
+					},
+					"region_code": {
+						"type": "keyword"
+					},
+					"region_name": {
+						"type": "keyword"
+					},
+					"timezone": {
+						"type": "keyword"
+					}
+				}
+			},
+			"host": {
+				"type": "keyword"
+			},
+			"message": {
+				"type": "text",
+				"fields": {
+					"keyword": {
+						"type": "keyword",
+						"ignore_above": 256
+					}
+				}
+			},
+			"program": {
+				"type": "keyword"
+			},
+			"reason": {
+				"type": "keyword"
+			},
+			"reason_extra": {
+				"type": "keyword"
+			},
+			"recipient_email": {
+				"type": "keyword"
+			},
+			"score": {
+				"type": "keyword"
+			},
+			"sender_email": {
+				"type": "keyword"
+			},
+			"sender_hostname": {
+				"type": "keyword"
+			},
+			"sender_ip": {
+				"type": "ip"
+			},
+			"service": {
+				"type": "keyword"
+			},
+			"size": {
+				"type": "long"
+			},
+			"subject": {
+				"type": "keyword"
+			},
+			"tags": {
+				"type": "keyword"
+			},
+			"type": {
+				"type": "keyword"
+			}
+		}
+	}
+}

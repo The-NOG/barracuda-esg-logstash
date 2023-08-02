@@ -1,2 +1,2 @@
 # barracuda-esg-logstash
-logstash pipeline for the Barracuda Email Security Gateway
+Here is the pipe line I used when I had a job that required monitoring a barracuda email gateway. I don't have access to it anymore so who knows if this is still good. Use at your own risk
